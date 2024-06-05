@@ -1,0 +1,599 @@
+/* #region reset */
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+a:hover {
+    color: grey;
+}
+
+.container {
+    width: 1263px;
+    height: 1260px;
+    margin: 0 auto;
+}
+
+/* #endregion reset */
+
+
+/* #region shortnav */
+.shortnav {
+    background-color: #333333;
+    width: 100%;
+    height: 40px;
+}
+
+.navcontent {
+    width: 1100px;
+    height: 40px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.navcontent ul {
+    float: right;
+
+}
+
+.navcontent ul li {
+    float: left;
+    list-style: none;
+    font-size: 12px;
+    line-height: 12px;
+    border-right: 1px solid #494649;
+    margin-top: 12px;
+    padding: 0 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.navcontent ul li:hover {
+    color: grey;
+}
+
+.navcontent ul span {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url(@/assets/image/css_sprites.png);
+    background-size: 15px 74px;
+    background-position: -2px 61px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* #endregion shortnav */
+
+
+/* #region header */
+.header {
+    width: 1100px;
+    margin: 30px auto;
+    clear: both;
+
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 70px;
+}
+
+.logo img {
+    width: 200px;
+    height: 70px;
+}
+
+.nav {
+    margin-left: 30px;
+    float: left;
+}
+
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 70px;
+}
+
+.nav ul li a {
+    color: black;
+}
+
+.nav ul li a:hover {
+    color: green;
+}
+
+.search {
+    height: 70px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search span {
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    background-image: url(@/assets/image/css_sprites.png);
+    background-size: 20px 95px;
+    background-position: 0px 115px;
+    margin-right: 5px;
+
+}
+
+.search input {
+    height: 12px;
+    width: 100px;
+}
+
+.car {
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5px;
+    position: relative;
+
+}
+
+.car span:nth-child(1) {
+
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(@/assets/image/css_sprites.png);
+    background-size: 22px 105px;
+    background-position: 0px 42px;
+
+}
+
+.car span:nth-child(2) {
+    position: absolute;
+    top: 21px;
+    left: 20px;
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
+
+/* #endregion header */
+
+
+/* #region footer */
+.footer {
+
+    background-color: #343334;
+}
+
+.footercontent {
+    width: 1100px;
+    margin: 0 auto;
+
+}
+
+.top {
+    height: 175px;
+    border-bottom: 3px solid #494649;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.top div {
+    display: flex;
+    align-items: center;
+}
+
+.top span {
+
+    color: white;
+    padding: 10px;
+
+
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+}
+
+.bottom {
+    height: 130px;
+    clear: both;
+
+}
+
+.bottom ul {
+    list-style: none;
+    margin-left: 195px;
+    margin-top: 30px;
+
+}
+
+.bottom ul li {
+
+    color: white;
+    font-size: 12px;
+    float: left;
+    border-right: 1px solid #494649;
+    padding: 0 25px;
+
+}
+
+.bottom span {
+    float: left;
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 500px;
+}
+
+/* #endregion footer */
+
+
+/* #region banner */
+.banner {
+    width: 100%;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.bannercontent {
+    width: 1100px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.slide-nav {
+    width: 250px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.715);
+    position: relative;
+}
+
+.slide-nav li {
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    padding-left: 25px;
+
+}
+
+.slide-nav a:hover {
+    color: chartreuse;
+}
+
+.slide-nav li:hover {
+    background-color: #333333;
+
+}
+
+.slide-nav li:hover .second-menu {
+    display: block;
+
+}
+
+.second-menu {
+    width: 550px;
+    height: 500px;
+    background-color: #33333393;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    clear: both;
+    display: none;
+    z-index: 100;
+}
+
+.second-menu dl {
+    height: 22px;
+    line-height: 22px;
+    margin-top: 45px;
+}
+
+.second-menu dd {
+    width: 100px;
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 255, 26);
+    font-weight: bolder;
+    margin-right: 10px;
+
+}
+
+.second-menu dt {
+    float: left;
+    border-left: 1px solid #000000;
+    font-size: 16px;
+    margin: 0 10px;
+
+}
+
+.second-menu dt a {
+    padding-left: 10px;
+}
+
+
+/*#region轮播图*/
+.carousel {
+    width: 850px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    background-color: rgba(255, 255, 255, 0.849);
+
+}
+
+.carousel img {
+    width: 850px;
+    height: 500px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 425px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 0 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators li.active {
+    background-color: gray;
+;
+}
+
+.carousel button {
+    background-color: #f5f5f5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel:hover button {
+    opacity: 1;
+}
+
+.carousel .prev {
+    position: absolute;
+    top: 250px;
+    left: 5px;
+}
+
+.carousel .next {
+    position: absolute;
+    top: 250px;
+    left: 805px;
+}
+
+/*#endregion轮播图*/
+/* #endregion banner */
+
+
+/* #region recommend */
+.recommend {
+    width: 1100px;
+    height: 1900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.types {
+    height: 250px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.texts {
+    clear: both;
+}
+
+.texts h3 {
+    float: left;
+    margin: 0;
+}
+
+.texts span {
+    float: right;
+    font-size: 12px;
+
+}
+
+.texts span a {
+    color: #333333;
+    line-height: 25px;
+}
+
+.pictures {
+    width: 1000px;
+    height: 270px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.picture {
+    width: 280px;
+    height: 220px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px #333333;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+.picture:hover {
+    scale: 1.1;
+}
+
+.picture:hover p:nth-of-type(1) {
+    color: #0bbe64;
+}
+
+.pictures img {
+    width: 280px;
+    height: 140px;
+}
+
+
+
+.pictures p {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+
+}
+
+.pictures p:nth-of-type(2) {
+    color: red;
+    margin-top: 0;
+}
+
+
+
+
+
+
+/* #endregion recommend */
+
+
+/* #region service */
+.service {
+    width: 1100px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicecontent {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicecontent img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 2px black;
+    margin: 10px 5px;
+
+
+}
+
+.servicecontent p {
+    font-weight: lighter;
+    font-size: 14px;
+    color: #bec1be;
+}
+
+.APP {
+    display: flex;
+}
+
+.app {
+
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #bec1be;
+
+}
+
+.APP img {
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+}
+
+.app button {
+    background-color: #72d5c4;
+    border: 0;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.app button:active {
+    scale: .9;
+}
+
+.tel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.tel p {
+    margin: 0;
+
+}
+
+.tel :first-child {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.tel :last-child {
+    font-size: 14px;
+}
+
+
+/* #endregion service */
+
+
+/* #region Fline */
+.Fline {
+    width: 1260px;
+    height: 1px;
+    box-shadow: 1px 1px 2px black;
+    margin: 0 auto;
+}
+
+/* #endregion Fline */

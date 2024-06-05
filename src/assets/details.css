@@ -1,0 +1,100 @@
+/* #region details */
+.container {
+    width: 1260px;
+    height: 1000px;
+    clear: both;
+    position: relative;
+
+}
+
+.el-divider--horizontal {
+
+    margin: 5px 0;
+}
+
+.slide-image {
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.slide-image img {
+    width: 500px;
+    height: 300px;
+    margin-left: 30px;
+}
+
+.slide-image h3 {
+    text-align: center;
+}
+
+.textcontent {
+    width: 500px;
+    position: absolute;
+    left: 750px;
+    top: 35px;
+
+
+}
+
+.jiage {
+
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.jiage span {
+    font-size: 14px;
+    color: gray;
+    font-weight: lighter;
+}
+
+.shuifei {
+    color: #6c6c6c;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 25px;
+    border: 1px solid black;
+    transition: background-color 1s;
+    margin-top: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    transform: scale() 1s;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+button:active {
+    scale: 0.9;
+}
+
+.jianjie {
+    width: 400px;
+    font-weight: lighter;
+    margin-top: 25px;
+}
+
+.jianjie p {
+    color: #6c6c6c;
+    font-size: 14px;
+
+}
+
+.jianjie img {
+    width: 100px;
+    height: 60px;
+}
+
+/* #endregion */

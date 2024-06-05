@@ -1,0 +1,51 @@
+/* #region order */
+.order-container,
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.order-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.order-list span {
+    padding-right: 168px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.remove-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.remove-btn:hover {
+    background-color: #e5553b;
+}
+
+.el-divider--horizontal {
+
+    margin: 5px 0;
+}
+
+/* #endregion order */
